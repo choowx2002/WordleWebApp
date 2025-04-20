@@ -1,8 +1,8 @@
 package edu.virginia.sde.hw2.wordle;
 
-import java.util.Arrays;
-
-import static edu.virginia.sde.hw2.wordle.LetterResult.*;
+import static edu.virginia.sde.hw2.wordle.LetterResult.BLUE;
+import static edu.virginia.sde.hw2.wordle.LetterResult.GRAY;
+import static edu.virginia.sde.hw2.wordle.LetterResult.YELLOW;
 
 /**
  * This class handles getting the result from a guess in a Wordle Game. This class is used by
@@ -68,7 +68,7 @@ public class GuessResult {
         boolean[] matchedInAnswer = new boolean[WordValidator.WORDLE_WORD_LENGTH];
         for (int i = 0; i < WordValidator.WORDLE_WORD_LENGTH; i++) {
             if (lowerGuess.charAt(i) == lowerAnswer.charAt(i)) {
-                results[i] = GREEN;
+                results[i] = BLUE;
                 matchedInAnswer[i] = true;
             }
         }
