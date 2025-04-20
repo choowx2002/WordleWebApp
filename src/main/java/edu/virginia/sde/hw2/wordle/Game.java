@@ -13,7 +13,7 @@ public class Game {
     /**
      * The default number of guesses the player starts with
      */
-    public static final int STARTING_GUESSES = 6;
+    public static final int STARTING_GUESSES = 5;
     /**
      * A dictionary containing the list of words the player is allowed to guess
      */
