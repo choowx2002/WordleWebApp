@@ -19,7 +19,15 @@ public class PlayWordle {
     }
 
     private static void playNewWordleGame() {
-        System.out.println("Welcome to Wordle! Try to guess the 5-letter word!");
+System.out.println("""
+ __        __   _                            _          _   _             
+ \\ \\      / /__| | ___ ___  _ __ ___   ___  | |_ ___   | |_| |__   ___    
+  \\ \\ /\\ / / _ \\ |/ __/ _ \\| '_ ` _ \\ / _ \\ | __/ _ \\  | __| '_ \\ / _ \\   
+   \\ V  V /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |_| | | |  __/   
+    \\_/\\_/ \\___|_|\\___\\___/|_| |_| |_|\\___|  \\__\\___/   \\__|_| |_|\\___|   
+                                                                          
+                          W O R D L E   -   G A M E
+""");
         game = new Game();
         while (!game.isGameOver()) {
             System.out.printf("You have %d guesses remaining\n", game.getGuessesRemaining());
