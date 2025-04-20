@@ -74,7 +74,7 @@ System.out.println("""
         StringBuilder stringBuilder = new StringBuilder();
         for (int index = 0; index < letterResults.length; index++) {
             stringBuilder.append(switch (letterResults[index]) {
-                case GREEN -> getGreenLetter(guess.charAt(index));
+                case BLUE -> getBlueLetter(guess.charAt(index));
                 case YELLOW -> getYellowLetter(guess.charAt(index));
                 case GRAY -> getGrayLetter(guess.charAt(index));
             });
@@ -82,7 +82,7 @@ System.out.println("""
         System.out.println(stringBuilder);
     }
 
-    private static String getGreenLetter(char guessLetter) {
+    private static String getBlueLetter(char guessLetter) {
         return String.format("\033[1;42m%c\033[0m", guessLetter);
     }
 
