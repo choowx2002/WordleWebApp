@@ -8,7 +8,7 @@ public enum LetterResult {
     /**
      * Correct letter and correct location
      */
-    GREEN,
+    BLUE,
     /**
      * The letter appears in the answer, but not at this location
      */

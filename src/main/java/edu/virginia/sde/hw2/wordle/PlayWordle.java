@@ -66,7 +66,7 @@ public class PlayWordle {
         StringBuilder stringBuilder = new StringBuilder();
         for (int index = 0; index < letterResults.length; index++) {
             stringBuilder.append(switch (letterResults[index]) {
-                case GREEN -> getGreenLetter(guess.charAt(index));
+                case BLUE -> getBlueLetter(guess.charAt(index));
                 case YELLOW -> getYellowLetter(guess.charAt(index));
                 case GRAY -> getGrayLetter(guess.charAt(index));
             });

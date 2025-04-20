@@ -68,7 +68,7 @@ public class GuessResult {
         boolean[] matchedInAnswer = new boolean[WordValidator.WORDLE_WORD_LENGTH];
         for (int i = 0; i < WordValidator.WORDLE_WORD_LENGTH; i++) {
             if (lowerGuess.charAt(i) == lowerAnswer.charAt(i)) {
-                results[i] = GREEN;
+                results[i] = BLUE;
                 matchedInAnswer[i] = true;
             }
         }
