@@ -26,7 +26,7 @@ class GameTest {
 
         assertEquals(defaultGuessesDictionary, game.getGuessDictionary());
         assertTrue(defaultAnswersDictionary.contains(game.getAnswer()));
-        assertEquals(6, game.getGuessesRemaining());
+        assertEquals(5, game.getGuessesRemaining());
         assertEquals(PLAYING, game.getGameStatus());
     }
 
@@ -36,7 +36,7 @@ class GameTest {
 
         assertEquals(defaultGuessesDictionary, game.getGuessDictionary());
         assertEquals("TREND", game.getAnswer());
-        assertEquals(6, game.getGuessesRemaining());
+        assertEquals(5, game.getGuessesRemaining());
         assertEquals(PLAYING, game.getGameStatus());
     }
 
