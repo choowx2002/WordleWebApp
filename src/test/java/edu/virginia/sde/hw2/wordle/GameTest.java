@@ -32,7 +32,7 @@ class GameTest {
 
     @Test
     public void test_init_4ArgumentConstructor() {
-        var game = new Game(defaultGuessesDictionary, "TREND", 6, PLAYING);
+        var game = new Game(defaultGuessesDictionary, "TREND", 5, PLAYING);
 
         assertEquals(defaultGuessesDictionary, game.getGuessDictionary());
         assertEquals("TREND", game.getAnswer());
