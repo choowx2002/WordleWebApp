@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="edu.virginia.sde.hw2.wordle.guessResultTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-04-20T08:44:19" hostname="VIVOBOOK-LEON" time="0.04">
+  <properties/>
+  <testcase name="noMatchTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.003"/>
+  <testcase name="incorrectLengthInGetLetterResultsTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.002"/>
+  <testcase name="threeSameLettersTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="isCorrectTest_caseInsensitive()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="oneYoneGreenDoubleTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.002"/>
+  <testcase name="oneGreenOneGrayDoubleTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="allGreenMatchTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="isCorrect_diffWord()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="caseInsensitiveTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="mixedTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.002"/>
+  <testcase name="answerTooShortInGetLetterResultsTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.002"/>
+  <testcase name="repeatedEndLettersTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+  <testcase name="guessTooLongInGetLetterResultsTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.002"/>
+  <testcase name="basicMatchTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
+=======
 <testsuite name="edu.virginia.sde.hw2.wordle.guessResultTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-04-22T15:20:17.832Z" hostname="WEIXIANG" time="0.011">
   <properties/>
   <testcase name="noMatchTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.003"/>
@@ -15,6 +33,7 @@
   <testcase name="repeatedEndLettersTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.0"/>
   <testcase name="guessTooLongInGetLetterResultsTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.001"/>
   <testcase name="basicMatchTest()" classname="edu.virginia.sde.hw2.wordle.guessResultTest" time="0.0"/>
+>>>>>>> main
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
