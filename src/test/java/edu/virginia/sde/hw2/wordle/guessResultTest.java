@@ -9,13 +9,13 @@ public class guessResultTest {
     @Test
     public void basicMatchTest() {
         GuessResult result = new GuessResult("brain", "basic");
-        LetterResult[] expected = {GREEN, GRAY, YELLOW, GREEN, GRAY};
+        LetterResult[] expected = {BLUE, GRAY, YELLOW, BLUE, GRAY};
         assertArrayEquals(expected, result.getLetterResults());
     }
     @Test
     public void allGreenMatchTest() {
         GuessResult result = new GuessResult("lions", "lions");
-        LetterResult[] expected = {GREEN, GREEN, GREEN, GREEN, GREEN};
+        LetterResult[] expected = {BLUE, BLUE, BLUE, BLUE, BLUE};
         assertArrayEquals(expected, result.getLetterResults());
     }
     @Test
@@ -33,20 +33,20 @@ public class guessResultTest {
     @Test
     public void oneYoneGreenDoubleTest() {
         GuessResult result = new GuessResult("apple", "papal");
-        LetterResult[] expected = {YELLOW, YELLOW, GREEN, YELLOW, GRAY};
+        LetterResult[] expected = {YELLOW, YELLOW, BLUE, YELLOW, GRAY};
         assertArrayEquals(expected, result.getLetterResults());
     }
     @Test
     public void oneGreenOneGrayDoubleTest() {
         GuessResult result = new GuessResult("roost", "coach");
-        LetterResult[] expected = {GRAY, GREEN, GRAY, GRAY, GRAY};
+        LetterResult[] expected = {GRAY, BLUE, GRAY, GRAY, GRAY};
         assertArrayEquals(expected, result.getLetterResults());
     }
 
     @Test
     public void caseInsensitiveTest() {
         GuessResult result = new GuessResult("lIoNS", "LIOns");
-        LetterResult[] expected = {GREEN, GREEN, GREEN, GREEN, GREEN};
+        LetterResult[] expected = {BLUE, BLUE, BLUE, BLUE, BLUE};
         assertArrayEquals(expected, result.getLetterResults());
     }
 
@@ -75,7 +75,7 @@ public class guessResultTest {
     @Test
     public void repeatedEndLettersTest() {
         GuessResult result = new GuessResult("troll", "rolls");
-        LetterResult[] expected = {GRAY, YELLOW, YELLOW, GREEN, YELLOW};
+        LetterResult[] expected = {GRAY, YELLOW, YELLOW, BLUE, YELLOW};
         assertArrayEquals(expected, result.getLetterResults());
 
     }
@@ -83,7 +83,7 @@ public class guessResultTest {
     @Test
     public void threeSameLettersTest() {
         GuessResult result = new GuessResult("pppaa", "apple");
-        LetterResult[] expected = {GRAY, GREEN, GREEN, YELLOW, GRAY};
+        LetterResult[] expected = {GRAY, BLUE, BLUE, YELLOW, GRAY};
         assertArrayEquals(expected, result.getLetterResults());
     }
 
